@@ -1,0 +1,470 @@
+/* Style Sheet for Jon Mooney's Portfolio */
+
+/* Global Styling */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Main CSS Variables */
+:root{
+    --main-bg-color:#fff;
+    --main-blue-color:#407cb9;
+    --main-font-color:#3f4751;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size:24px;
+    font-weight:300;
+    color: var(--main-font-color);
+    -webkit-font-smoothing: antialiased;
+    padding-bottom:50px;
+}
+
+/* Formatting and General CSS */
+.center{text-align:center;}
+.marg-top-20{margin-top:20px;}
+.marg-top-30{margin-top:30px;}
+.marg-top-40{margin-top:40px}
+.float-right{float:right;}
+.float-left{float:left;}
+.emph{
+    font-size:22px;
+    font-weight:400;
+}
+
+a, a:visited, a:active{
+    color: var(--main-blue-color);
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+/* End of formatting and general CSS */
+
+/* Alternating tapered row styling */
+.row{
+    width:100%;
+    padding: 40px 0;
+    z-index:0;
+}
+
+.row-gray {
+    background-color: lightgrey;
+    background: linear-gradient(#dedede, #b1b1b1);
+
+    -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
+}
+/* End of alternating tapered row styling */
+
+/* Section styling - These sit inside of rows */
+section{
+    max-width:1200px;
+    margin:0 auto;
+    padding:10px 30px;
+}
+
+#about-me{margin-top:20px;}
+
+/* Header and navigation links*/
+header{
+    width:100%;
+    position:sticky;
+    top:0;
+    background-color:rgba(255, 255, 255, 0.9);
+    border-bottom:1px solid #f0f0f0;
+    z-index:1;
+}
+
+.header-wrapper{
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:right;
+    text-align:right;
+    padding:5px 30px;
+    position: -webkit-sticky;
+    line-height:1.4;
+}
+
+header h1{
+    font-size: 36px;
+}
+
+header span{
+    color:#e0e0e0;
+    font-size:28px;
+}
+
+header nav{
+    margin: 5px 0 5px auto;
+}
+
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:right;
+    align-items:center;
+    list-style:none;
+}
+
+nav ul li{
+    padding:5px 20px;
+    font-weight:400;
+    color:var(--main-blue-color)
+}
+
+nav ul li a{
+    color: var(--main-font-color);
+    text-decoration:none;
+}
+
+nav ul li a:visited{
+    color: var(--main-font-color);
+}
+
+nav ul li a.active{
+    color: var(--main-blue-color)
+}
+
+nav ul li a:hover{
+    text-decoration:none;
+    color: var(--main-blue-color);
+    border-bottom:2px solid;
+    border-bottom-color: var(--main-blue-color);
+    cursor:pointer;
+}
+/* End of header and navigation links */
+
+/* Headshot, name and role section */
+.headshot{margin-left:-15px;}
+
+.name-text{
+    font-size:42px;
+    font-weight:300;
+}
+
+.role-wrapper{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin-top:18px;
+}
+
+.role-tag{
+    background-color: var(--main-blue-color);
+    padding: 6px 28px 10px 28px;
+    margin-top:15px;
+    color: #fff;
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display:inline;
+}
+/* End of headshot, name and role section */
+
+/* Heading for each page section */
+.heading{
+    font-size:34px;
+    font-weight:bold;
+    text-align:center;
+    color: var(--main-blue-color);
+}
+
+.content p{
+    margin-top:15px;
+}
+
+.about-name{
+    font-size:28px;
+    font-weight:400;
+}
+
+/* Projects section using flexbox */
+.flex-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.flex-container:first-of-type{
+    flex: 1 0 98%;
+}
+
+.flex-container{
+    flex: 1 0 48%;
+    padding:20px 10px;
+    margin:10px;
+    border:1px solid #CCC;
+    background-color:#f8f8f8;
+    border-radius:10px;
+    min-width:150px;
+    text-align:center;
+}
+
+.flex-container h3{
+    text-align:center;
+}
+
+.flex-container ul{
+    list-style-type:none;
+    margin-top:12px;
+}
+
+.flex-container img{
+    display:block;
+    width:98%;
+    max-width:500px;
+    margin:10px auto;
+}
+/* End of projects section using flexbox */
+
+/* Skills section using flexbox and devicons */
+.skill-container{
+    /* color:#656565; */
+    text-align:center;
+    margin:15px 30px;
+}
+
+.skill-container p{
+    margin-top:5px;
+}
+
+.devicon{
+    font-size:75px;
+    color:#FFF;
+}
+
+.skill-icon{
+    width:75px;
+    height:75px;
+}
+/* End of skills section using flexbox and devicons */
+
+/* Work Experience */
+.work-experience ul{
+    list-style-type:none;
+    margin:10px 0 0 25px;
+}
+
+.work-experience ul li{
+    max-width:900px;
+    padding-bottom:15px;
+    list-style-type:circle;
+}
+
+.work-heading{
+    margin-top:25px;
+    font-weight:500;
+}
+/* End of Work Experience */
+
+/* Contact Form */
+.contact-form{
+    margin-top:15px;
+}
+
+.contact-form label{
+    display:block;
+    margin-top:15px;
+    color: var(--main-blue-color);
+    font-weight:400;
+}
+
+textarea, .contact-form input{
+    margin-top:5px;
+    width:98%;
+    max-width:550px;
+    padding:10px;
+    border:2px solid #CCC;
+    border-radius:5px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size:23px;
+    outline:none;
+}
+
+/*.contact-form input[type="textarea"]{*/
+textarea{
+    height:125px;
+}
+
+textarea:focus, .contact-form input:focus{
+    border:2px solid var(--main-blue-color);
+}
+
+textarea::-webkit-input-placeholder, .contact-form input::-webkit-input-placeholder {
+    color: #CCC;
+}
+textarea::ms-input-placeholder, .contact-form input:-ms-input-placeholder {
+    color: #CCC;
+}
+textarea::placeholder, .contact-form input::placeholder {
+    color: #CCC;
+}
+
+.error-text{
+    color:rgb(184, 0, 0);
+}
+/* End of Contact Form */
+
+footer{
+    width:100%;
+    margin-top:40px;
+    text-align:center;
+    font-size:50px; /*For devicon sizing */
+}
+
+footer a{
+    
+    text-decoration:none;
+}
+
+footer i{
+    color:rgb(167, 167, 167);
+    transition: transform .2s;
+}
+
+footer a:hover{
+    
+    text-decoration:none;
+}
+
+footer i:hover{
+    color:rgb(141, 141, 141);
+    transform: scale(1.2); 
+}
+
+/* Site Buttons */
+.button{
+    border:none;
+    outline:none;
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background-color:#549657;
+    border-radius: 5px;
+    color:#FFF;
+    text-decoration:none;
+    font-size:20px;
+}
+
+.button:hover{
+    background-color:#4a844e;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.button:visited, .button:active, .button-disabled:visited, .button-disabled:active{
+    color:#FFF;
+}
+
+.button-disabled{
+    display:inline-block;
+    margin-top:15px;
+    padding:6px 20px 8px 20px;
+    background-color:#ccc;
+    border-radius: 5px;
+    color:#FFF;
+}
+
+.button-disabled:hover{
+    text-decoration:none;
+    cursor:default;
+}
+/* End of Site Buttons */
+
+/* Large screen media query */
+@media (max-width: 980px) {
+    .row-gray {
+        -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    }
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    .header-wrapper div{
+        margin:0 auto;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav{
+        width:100%;
+    }
+
+      header nav ul {
+        margin-top: 0;      
+        justify-content: center;
+    }
+
+    header nav ul li a{
+        font-size:24px;
+    }
+
+    .name-text{
+        font-size:38px;
+    }
+}
+/* End of large screen media query */
+  
+/* Tablet media query */
+@media (max-width: 768px) {
+    section{
+        padding:10px 20px;
+    }
+
+    .flex-container:first-of-type, .flex-container{
+        flex: 1 0 100%;
+    }
+
+    .heading{
+        text-align:center;
+    }
+
+    .row-gray {
+        -webkit-clip-path: polygon(0 0%, 100% 1%, 100% 99%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 1%, 100% 99%, 0% 100%);
+    }
+
+    .about-name{text-align:center;}
+}
+/* End of tablet media query */
+
+/* Mobile phone media query */
+@media (max-width: 575px) {
+    body{
+        font-size:22px;
+    }
+
+    /* header{
+        position: relative;
+    } */
+
+    header nav ul{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .devicon{
+        font-size:60px;
+    }
+
+    .skill-icon{
+        width:60px;
+        height:60px;
+    }
+}
+/* End of mobile phone media query */
