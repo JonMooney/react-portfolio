@@ -101,8 +101,7 @@ export default function Projects() {
         <div className="flex-box">
 
           {projects.map((project, key) => {
-            //return <div key={key}><Project data={project} /></div>
-            return <Project data={project} />
+            return <div className="flex-container" key={key}><Project data={project} /></div>
           })}
           
 

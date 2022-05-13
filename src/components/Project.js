@@ -8,7 +8,7 @@ export default function Project({data}) {
       }, [])
     
     return (
-    <div className="flex-container">
+        <>
         <h3>{title}</h3>
         
         <a href={githubLink} target="_blank" title="View the GitHub page">
@@ -25,7 +25,6 @@ export default function Project({data}) {
             
         <a className="button" href={githubLink} target="_blank" title="View the GitHub page">View on GitHub</a>&nbsp;&nbsp;
         {deployedLink ? <a className="button" href={deployedLink} target="_blank" title="View deployed app">View the deployed app</a> : '' }
-        
-    </div>
-  )
+        </>
+    )
 }
