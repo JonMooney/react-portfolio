@@ -5,6 +5,8 @@
 
 This is a professional portfolio using React as the front-end delivery
 
+[View the deployed application](https://jonmooney.github.io/react-portfolio/)
+
 ## Table of Contents
 
 - [Description](#description)
@@ -32,7 +34,7 @@ This is a professional portfolio using React as the front-end delivery
 
 ### Screenshot:
 
-![Screenshot](./images/screen.jpg)
+![Screenshot](./public/images/screen.jpg)
 
 ## License
 
