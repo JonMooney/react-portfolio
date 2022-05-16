@@ -12,7 +12,7 @@ export default function Project({data}) {
         <h3>{title}</h3>
         
         <a href={githubLink} target="_blank" title="View the GitHub page">
-            <img src={image} alt={alt} />&nbsp;&nbsp;
+            <img src={process.env.PUBLIC_URL + "/images/" + image} alt={alt} />&nbsp;&nbsp;
         </a>
         
         <p>{description}</p>

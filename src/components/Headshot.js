@@ -5,7 +5,7 @@ import React from 'react';
 function Headshot({ currentPage, handlePageChange }) {
   return (
     <section className="center">
-        <img className="headshot" src="./images/headshot2.jpg" height="230" alt="Headshot of Jon Mooney" />
+        <img className="headshot" src={process.env.PUBLIC_URL + "/images/headshot2.jpg"} height="230" alt="Headshot of Jon Mooney" />
         <h1 className="name-text">
             Jon Mooney
         </h1>

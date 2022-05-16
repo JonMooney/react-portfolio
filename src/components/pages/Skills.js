@@ -28,7 +28,7 @@ export default function Skills() {
                 </div>
 
                 <div className="skill-container">
-                    <img className="skill-icon" src="./images/es6.png" />
+                    <img className="skill-icon" src={process.env.PUBLIC_URL + "/images/es6.png"} />
                     <p>ES6</p>
                 </div>
 
@@ -48,12 +48,12 @@ export default function Skills() {
                 </div>
 
                 <div className="skill-container">
-                    <img className="skill-icon" src="./images/oop.png" />
+                    <img className="skill-icon" src={process.env.PUBLIC_URL + "/images/oop.png"} />
                     <p>OOP</p>
                 </div>
 
                 <div className="skill-container">
-                    <img className="skill-icon" src="./images/css.png" />
+                    <img className="skill-icon" src={process.env.PUBLIC_URL + "/images/css.png"} />
                     <p>CSS</p>
                 </div>
 
@@ -93,22 +93,22 @@ export default function Skills() {
                 </div>
 
                 <div className="skill-container">
-                    <img className="skill-icon" src="./images/responsive.svg" />
+                    <img className="skill-icon" src={process.env.PUBLIC_URL + "/images/responsive.svg"} />
                     <p>Responsive Design</p>
                 </div>
 
                 <div className="skill-container">
-                    <img className="skill-icon" src="./images/excel-icon.png" />
+                    <img className="skill-icon" src={process.env.PUBLIC_URL + "/images/excel-icon.png"} />
                     <p>Excel</p>
                 </div>
 
                 <div className="skill-container">
-                    <img className="skill-icon" src="./images/xml.png" />
+                    <img className="skill-icon" src={process.env.PUBLIC_URL + "/images/xml.png"} />
                     <p>XML/XSLT</p>
                 </div>
 
                 <div className="skill-container">
-                    <img className="skill-icon" src="./images/w3c-icon.svg" />
+                    <img className="skill-icon" src={process.env.PUBLIC_URL + "/images/w3c-icon.svg"} />
                     <p>Web Accessibility</p>
                 </div>
             </div>
